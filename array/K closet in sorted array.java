@@ -38,3 +38,8 @@ public class Solution {
     return -1;
   }
 }
+
+
+Class Array{
+  private int length;  //
+}
