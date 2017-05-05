@@ -1,3 +1,8 @@
+//List is ordered collection and can contain duplicate element
+//precise control and access element by index
+
+
+
 //getLength(ListNode head)
 int getLength(ListNode list){
 	int length = 0;
