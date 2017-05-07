@@ -59,7 +59,7 @@ Two ways to realize the order of PriorityQueue
    *****if E already implements Comparable<E>, but still provides a Comparator. 
    PriorityQueue would choose the order specified in Comparator********
 
-
+   Anonymous inner class (define in a method with just new and no definition)
 
 
 
