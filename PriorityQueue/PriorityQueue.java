@@ -42,7 +42,7 @@ Two ways to realize the order of PriorityQueue
 
    *******the return value of compareTo determines the order: -1 this has higher priority than another.*******
 
-2. privide Comparator<E> class to compare elements, and pass an comparator object to the PriorityQueue.
+2. provide Comparator<E> class to compare elements, and pass an comparator object to the PriorityQueue.
 
    interface Comparator<E>{
     int compare(E o1, E o2);
