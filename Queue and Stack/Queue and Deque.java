@@ -2,7 +2,7 @@ Deque could be implemented by LinkedList and ArrayDequeue
 We just use LinkedList to implement Queue and Deque interface.
 ArrayDequeue: no null value in Deque
 
-using deque as stack
+Using deque as stack
 
 Deque<Integer> stack = new LinkedList<>();
 stack.offerFrist();

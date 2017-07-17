@@ -1,11 +1,7 @@
-Two ways to realize the order of PriorityQueue
+  Two ways to realize the order of PriorityQueue
 
 1. the element type implements Comparable interface and thus implements the required method 
    int compareTo(E ele){}
-
-   interface Comparable<E>{
-    int compareTo(E ele);
-   }
 
    Example:
    class Integer implements Comparable<Integer>{
@@ -42,7 +38,12 @@ Two ways to realize the order of PriorityQueue
 
    *******the return value of compareTo determines the order: -1 this has higher priority than another.*******
 
-2. provide Comparator<E> class to compare elements, and pass an comparator object to the PriorityQueue.
+2. provide Comparator<E> interface to compare elements, and pass an comparator object to the PriorityQueue.
+
+   We could create many comparator class to define many comparasion rule.
+
+   class MyComparator implements Comparator<Cell> {}
+   class MyAnotherComparator implements Comparator<Cell> {}
 
    interface Comparator<E>{
     int compare(E o1, E o2);
@@ -60,6 +61,8 @@ Two ways to realize the order of PriorityQueue
    PriorityQueue would choose the order specified in Comparator********
 
    Anonymous inner class (define in a method with just new and no definition)
+
+   compareTo(E o) and compare(E o1, E o2) is to set the comparasion rule.
 
 
 
