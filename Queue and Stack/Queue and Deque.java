@@ -13,3 +13,9 @@ Queue<Integer> qu = new LinkedList<>();
 qu.offer();
 qu.poll();
 qu.peek();
+
+For Queue
+throw exception           return special value (null, false)
+add(e)					  offer(e)
+remove()				  poll()
+element()				  peek()
